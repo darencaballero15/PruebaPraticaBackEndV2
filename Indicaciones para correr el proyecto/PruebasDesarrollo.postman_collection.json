@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "77e3870b-f096-4a14-936e-a2b0354143b2",
+		"name": "PruebasDesarrollo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9731458"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8090/prueba/consulta_menus_rol/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/consulta_menus_rol/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"consulta_menus_rol",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/generos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/generos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"generos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/niveles_educativos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/niveles_educativos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"niveles_educativos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/estado_civil",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/estado_civil",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"estado_civil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/tipo_documento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/tipo_documento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"tipo_documento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/roles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/consulta_usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/consulta_usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"consulta_usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/consulta_usuario/123456789",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/consulta_usuario/123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"consulta_usuario",
+						"123456789"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/crear_usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo_documento\": 1,\r\n    \"documento\": 1090500501,\r\n    \"nombres\": \"DAREN\",\r\n    \"apellido1\": \"CABALLERO\",\r\n    \"apellido2\": \"QUINTERO\",\r\n    \"genero\": 1,\r\n    \"nivel_educativo\": 3,\r\n    \"estado_civil\": 2,\r\n    \"telefono\": 3123456789,\r\n    \"email\" : \"darencaballero@hotmail.com\",\r\n    \"direccion\": \"Calle 123 # 45-67\",\r\n    \"rol\": 1,\r\n    \"estado\": \"S\",\r\n    \"fecha_nacimiento\": \"2000-01-01\",\r\n    \"fecha_registro\": \"2024-01-13T12:00:00.000Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/prueba/crear_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"crear_usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/editar_usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documento\": 1090500501,\r\n    \"nivel_educativo\": 3,\r\n    \"estado_civil\": 2,\r\n    \"telefono\": 55555555,\r\n    \"email\" : \"juanperez@hotmail.com\",\r\n    \"direccion\": \"Calle 123 # 45\",\r\n    \"rol\": 1,\r\n    \"estado\": \"S\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/prueba/editar_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"editar_usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/prueba/borrar_usuario/1090500501",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/prueba/borrar_usuario/1090500501",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"prueba",
+						"borrar_usuario",
+						"1090500501"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
